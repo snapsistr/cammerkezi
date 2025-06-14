@@ -1,0 +1,34 @@
+CAM/
+├── README.md
+├── .env.example
+├── package.json
+├── next.config.js
+├── prisma/
+│   ├── schema.prisma
+├── src/
+│   ├── pages/
+│   │   ├── _app.tsx
+│   │   ├── index.tsx
+│   │   ├── admin/
+│   │   │   ├── index.tsx
+│   │   │   ├── products.tsx
+│   │   │   ├── prices.tsx
+│   │   ├── api/
+│   │   │   ├── auth/[...nextauth].ts
+│   │   │   ├── products.ts
+│   │   │   ├── prices.ts
+│   │   │   ├── quote.ts
+│   │   │   ├── export-pdf.ts
+│   ├── components/
+│   │   ├── AdminLayout.tsx
+│   │   ├── ProductForm.tsx
+│   │   ├── PriceForm.tsx
+│   │   ├── ProductCalculator.tsx
+│   │   ├── PdfPreview.tsx
+│   ├── lib/
+│   │   ├── prisma.ts
+│   │   ├── pdf.ts
+│   ├── styles/
+│   │   ├── globals.css
+├── public/
+│   ├── logo.png
