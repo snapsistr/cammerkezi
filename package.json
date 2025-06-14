@@ -1,0 +1,27 @@
+{
+  "name": "cam",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prisma": "prisma"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.2.2",
+    "antd": "^5.15.3",
+    "i18next": "^23.6.3",
+    "next": "14.2.3",
+    "next-auth": "^4.24.6",
+    "pdf-lib": "^1.17.1",
+    "prisma": "^5.13.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.21",
+    "@types/react": "^18.2.49",
+    "typescript": "^5.4.4"
+  }
+}
