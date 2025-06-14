@@ -7,10 +7,20 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model User {
+  id       Int    @id @default(autoincrement())
+  name     String?
+  email    String? @unique
+  password String? // Eğer e-posta/şifre ile giriş olacaksa
+  role     String  @default("user") // "admin" veya "user"
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
 model Product {
   id        Int      @id @default(autoincrement())
   name      String
-  type      String   // cam, ayna vb.
+  type      String
   thickness Float
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -20,7 +30,7 @@ model Product {
 model Price {
   id         Int      @id @default(autoincrement())
   productId  Int
-  unit       String   // m2, adet, vs.
+  unit       String
   value      Float
   validFrom  DateTime
   validTo    DateTime?
